@@ -28,7 +28,7 @@
       <button class="search-btn" aria-label="Search">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
       </button>
-      <a class="btn btn-red" href="#">Build with KeenEthics</a>
+      <a class="btn btn-red" href="#" data-modal="modal-talk">Build with KeenEthics</a>
     </div>
   </div>
 </header>
@@ -453,7 +453,7 @@
       <h2>Want an MCP app that <span class="accent">beats your competitors?</span><br/>Let's talk.</h2>
       <p>I'm Daria, Head of Partner Engagement at KeenEthics. We've shipped 20+ Claude Connectors, ChatGPT Apps, and Cursor extensions. Send me a quick note about your project — I'll reply personally with how we can help.</p>
       <div class="actions">
-        <a class="btn btn-red" href="#">Talk to Daria
+        <a class="btn btn-red" href="#" data-modal="modal-talk">Talk to Daria
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
         </a>
         <a class="btn btn-ghost" href="#">See case studies</a>
@@ -513,5 +513,131 @@
     });
   });
 </script>
+
+<!-- ============ MODALS ============ -->
+<dialog class="ke-modal" id="modal-review">
+  <div class="ke-modal-inner">
+    <button class="ke-modal-close" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    <div class="ke-modal-person">
+      <img src="daria.webp" alt="Daria Hlavcheva" />
+      <div><b>Daria Hlavcheva</b><span>Head of Partner Engagement &middot; KeenEthics</span><span class="online">&bull; Online now</span></div>
+    </div>
+    <h2>Book a free Connector review</h2>
+    <p>Send me your manifest, scopes and reject-risk concerns. I&rsquo;ll spot risks before you submit. Zero pitch &mdash; just useful feedback.</p>
+    <form class="ke-modal-form" data-success="Got it &mdash; I&rsquo;ll reply within a few hours.">
+      <label><span>Your name *</span><input type="text" required placeholder="First and last name" /></label>
+      <label><span>Work email *</span><input type="email" required placeholder="you@company.com" /></label>
+      <label><span>Manifest URL (optional)</span><input type="url" placeholder="https://..." /></label>
+      <label><span>Anything specific to flag?</span><textarea placeholder="Privacy policy, OAuth setup, scope decisions..."></textarea></label>
+      <button class="btn btn-red" type="submit">Book my review</button>
+    </form>
+    <p class="ke-modal-foot">Avg reply: a few hours &middot; We never share your details</p>
+  </div>
+</dialog>
+
+<dialog class="ke-modal" id="modal-checklist">
+  <div class="ke-modal-inner">
+    <button class="ke-modal-close" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    <div class="ke-modal-person">
+      <img src="daria.webp" alt="Daria Hlavcheva" />
+      <div><b>Daria Hlavcheva</b><span>Head of Partner Engagement &middot; KeenEthics</span></div>
+    </div>
+    <h2>Get the Connector checklist</h2>
+    <p>A printable 1-pager I send to every client &mdash; every reviewer-tested field on one page. Used by 400+ teams.</p>
+    <form class="ke-modal-form" data-success="Sent! Check your inbox in the next minute.">
+      <label><span>Work email *</span><input type="email" required placeholder="you@company.com" /></label>
+      <button class="btn btn-blue" type="submit">Email it to me</button>
+    </form>
+    <p class="ke-modal-foot">Free &middot; No follow-up sales emails &middot; One-click unsubscribe</p>
+  </div>
+</dialog>
+
+<dialog class="ke-modal" id="modal-subscribe">
+  <div class="ke-modal-inner">
+    <button class="ke-modal-close" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    <div class="ke-modal-person">
+      <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=120&h=120&auto=format&fit=crop&crop=faces&q=80" alt="Mykyta Kuzmenko" />
+      <div><b>Mykyta Kuzmenko</b><span>Head of MCP Research &middot; KeenEthics Labs</span></div>
+    </div>
+    <h2>Subscribe to The MCP Brief</h2>
+    <p>Every Tuesday: signals shaping ChatGPT &amp; Claude app discovery, real submission data, and one playbook each week.</p>
+    <form class="ke-modal-form" data-success="You&rsquo;re in. First brief lands next Tuesday.">
+      <label><span>Work email *</span><input type="email" required placeholder="you@company.com" /></label>
+      <button class="btn btn-blue" type="submit">Subscribe</button>
+    </form>
+    <p class="ke-modal-foot">2,400+ founders &amp; PMs subscribed &middot; Unsubscribe anytime</p>
+  </div>
+</dialog>
+
+<dialog class="ke-modal" id="modal-talk">
+  <div class="ke-modal-inner">
+    <button class="ke-modal-close" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    <div class="ke-modal-person">
+      <img src="daria.webp" alt="Daria Hlavcheva" />
+      <div><b>Daria Hlavcheva</b><span>Head of Partner Engagement &middot; KeenEthics</span><span class="online">&bull; Online now</span></div>
+    </div>
+    <h2>Talk to Daria</h2>
+    <p>Tell me about your project. We&rsquo;ve shipped 20+ Connectors, ChatGPT Apps and Cursor extensions &mdash; I&rsquo;ll get back in 24h with how we can help.</p>
+    <form class="ke-modal-form" data-success="Got it &mdash; I&rsquo;ll reply within a few hours.">
+      <label><span>Your name *</span><input type="text" required placeholder="First and last name" /></label>
+      <label><span>Work email *</span><input type="email" required placeholder="you@company.com" /></label>
+      <label><span>Company</span><input type="text" placeholder="Acme Inc." /></label>
+      <label><span>What you&rsquo;re building *</span><textarea required placeholder="A few lines about the app, target platform (Claude / ChatGPT / Cursor), and timeline..."></textarea></label>
+      <button class="btn btn-red" type="submit">Send message</button>
+    </form>
+    <p class="ke-modal-foot">Avg reply: a few hours &middot; NDA available on request</p>
+  </div>
+</dialog>
+
+<script>
+(function(){
+  function bind(){
+    document.querySelectorAll('[data-modal]').forEach(function(t){
+      if (t.dataset.modalBound) return;
+      t.dataset.modalBound = '1';
+      t.addEventListener('click', function(e){
+        e.preventDefault();
+        var id = t.getAttribute('data-modal');
+        var dlg = document.getElementById(id);
+        if (dlg && dlg.showModal) dlg.showModal();
+      });
+    });
+    document.querySelectorAll('.ke-modal').forEach(function(dlg){
+      if (dlg.dataset.modalBound) return;
+      dlg.dataset.modalBound = '1';
+      dlg.addEventListener('click', function(e){
+        var inner = dlg.querySelector('.ke-modal-inner');
+        if (!inner) return;
+        var r = inner.getBoundingClientRect();
+        if (e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom) dlg.close();
+      });
+      dlg.querySelectorAll('.ke-modal-close').forEach(function(b){
+        b.addEventListener('click', function(){ dlg.close(); });
+      });
+      var form = dlg.querySelector('.ke-modal-form');
+      if (form) {
+        form.addEventListener('submit', function(e){
+          e.preventDefault();
+          var msg = form.dataset.success || 'Sent!';
+          var inner = dlg.querySelector('.ke-modal-inner');
+          inner.innerHTML =
+            '<button class="ke-modal-close" aria-label="Close">' +
+              '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>' +
+            '</button>' +
+            '<div class="ke-modal-success">' +
+              '<div class="ke-modal-success-ico">' +
+                '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>' +
+              '</div>' +
+              '<h2>Thanks!</h2><p>'+msg+'</p>' +
+            '</div>';
+          inner.querySelector('.ke-modal-close').addEventListener('click', function(){ dlg.close(); });
+        });
+      }
+    });
+  }
+  bind();
+})();
+</script>
+
 </body>
 </html>

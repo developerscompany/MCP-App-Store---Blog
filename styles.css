@@ -489,6 +489,106 @@ a { color: inherit; text-decoration: none; }
 .cta-block .btn-ghost { color: #fff; border-color: rgba(255,255,255,.40); background: transparent; }
 .cta-block .btn-ghost:hover { background: rgba(255,255,255,.10); border-color: #fff; }
 
+/* ===================== Modal ===================== */
+.ke-modal {
+  border: 0; padding: 0; background: transparent;
+  max-width: 540px; width: calc(100% - 32px);
+  border-radius: 16px;
+}
+.ke-modal::backdrop {
+  background: rgba(11,23,41,.55);
+  backdrop-filter: blur(4px);
+}
+.ke-modal[open] { animation: ke-modal-in .22s ease both; }
+@keyframes ke-modal-in {
+  from { opacity: 0; transform: translateY(12px) scale(.97); }
+  to   { opacity: 1; transform: none; }
+}
+.ke-modal-inner {
+  background: #fff;
+  border-radius: 16px;
+  padding: 28px 30px 24px;
+  position: relative;
+  max-height: 90vh; overflow-y: auto;
+  box-shadow: 0 40px 80px rgba(11,23,41,.30);
+}
+.ke-modal-close {
+  position: absolute; top: 14px; right: 14px;
+  width: 32px; height: 32px; border: 0; background: var(--tint);
+  border-radius: 8px; cursor: pointer; color: var(--navy);
+  display: grid; place-items: center; transition: background .15s;
+}
+.ke-modal-close:hover { background: var(--line); }
+.ke-modal-close svg { width: 14px; height: 14px; }
+
+.ke-modal-person {
+  display: flex; align-items: center; gap: 12px;
+  padding-bottom: 18px; margin-bottom: 18px;
+  border-bottom: 1px solid var(--line);
+}
+.ke-modal-person img {
+  width: 48px; height: 48px; border-radius: 50%; object-fit: cover;
+  border: 2px solid #fff; box-shadow: 0 4px 10px rgba(18,35,61,.15);
+  flex: none;
+}
+.ke-modal-person b { display: block; font-size: 14px; color: var(--navy); }
+.ke-modal-person > div > span { display: block; font-size: 12px; color: var(--muted); }
+.ke-modal-person .online {
+  color: #1FAE45; font-weight: 700; font-size: 11px;
+  text-transform: uppercase; letter-spacing: .08em; margin-top: 2px;
+}
+
+.ke-modal-inner h2 {
+  margin: 0 0 8px; font-size: 22px; font-weight: 800; color: var(--navy);
+  line-height: 1.25;
+}
+.ke-modal-inner > p {
+  margin: 0 0 22px; font-size: 14.5px; color: var(--muted);
+  line-height: 1.55;
+}
+
+.ke-modal-form { display: flex; flex-direction: column; gap: 12px; }
+.ke-modal-form label {
+  display: block; font-size: 12px; font-weight: 700;
+  color: var(--navy); text-transform: uppercase; letter-spacing: .04em;
+}
+.ke-modal-form label > span { display: block; margin-bottom: 5px; }
+.ke-modal-form input,
+.ke-modal-form textarea {
+  width: 100%; box-sizing: border-box;
+  font-family: var(--font); font-size: 14px; font-weight: 500;
+  padding: 11px 14px; border: 1px solid var(--line);
+  border-radius: 6px; background: #fff;
+  color: var(--navy); outline: none;
+  transition: border-color .15s;
+  text-transform: none; letter-spacing: 0;
+}
+.ke-modal-form input::placeholder,
+.ke-modal-form textarea::placeholder { color: var(--muted-2); font-weight: 400; }
+.ke-modal-form input:focus,
+.ke-modal-form textarea:focus { border-color: var(--blue); }
+.ke-modal-form textarea { min-height: 92px; resize: vertical; font-family: var(--font); }
+.ke-modal-form .btn { width: 100%; justify-content: center; margin-top: 8px; }
+
+.ke-modal-foot {
+  margin: 14px 0 0; font-size: 12px; color: var(--muted-2);
+  text-align: center;
+}
+
+.ke-modal-success { text-align: center; padding: 24px 4px 8px; }
+.ke-modal-success-ico {
+  width: 64px; height: 64px; border-radius: 50%;
+  background: rgba(31,174,69,.14); color: #1FAE45;
+  display: grid; place-items: center; margin: 0 auto 16px;
+}
+.ke-modal-success-ico svg { width: 30px; height: 30px; }
+.ke-modal-success h2 { margin: 0 0 6px; font-size: 22px; font-weight: 800; color: var(--navy); }
+.ke-modal-success p { margin: 0; color: var(--muted); font-size: 14.5px; }
+
+@media (max-width: 540px) {
+  .ke-modal-inner { padding: 22px 22px 20px; }
+}
+
 /* ===================== Footer ===================== */
 .site-footer { border-top: 1px solid var(--line); padding: 40px 0 30px; background: #fff; }
 .site-footer .inner {

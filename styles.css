@@ -312,7 +312,6 @@ a { color: inherit; text-decoration: none; }
 }
 .filter-bar .search:focus-within {
   border-color: var(--blue); background: #fff; color: var(--navy);
-  box-shadow: 0 0 0 4px rgba(41,105,204,.15);
 }
 .filter-bar .search svg { width: 16px; height: 16px; }
 .filter-bar .search input {

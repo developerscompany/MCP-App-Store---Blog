@@ -325,7 +325,7 @@ a { color: inherit; text-decoration: none; }
 .grid-section .head { display:flex; align-items: baseline; justify-content: space-between; margin-bottom: 26px; gap: 16px; flex-wrap: wrap; }
 .grid-section h2 { margin: 0; font-size: 26px; font-weight: 800; color: var(--navy); }
 .grid-section .head p { margin: 0; color: var(--muted); font-size: 14.5px; }
-.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; }
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; align-items: start; }
 
 .card {
   display:flex; flex-direction: column; gap: 14px; cursor: pointer;

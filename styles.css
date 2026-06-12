@@ -223,13 +223,13 @@ a { color: inherit; text-decoration: none; }
   width: 100%; height: 100%; object-fit: cover; display: block;
   transform: scale(1.14); transform-origin: center; /* crop out residual cover bg */
 }
-.cover .ico.dark { background: #12233D; color: #fff; }
-.cover .ico.brand-claude  { background: #D97757; }
-.cover .ico.brand-openai  { background: #fff; }
-.cover .ico.brand-cursor  { background: #000; }
-.cover .ico.brand-apps    { background: #fff; }
+.cover .ico.dark          { background: #fff; color: var(--navy); }
+.cover .ico.brand-claude  { background: #fff; color: #D97757; }
+.cover .ico.brand-openai  { background: #fff; color: #10A37F; }
+.cover .ico.brand-cursor  { background: #fff; color: var(--navy); }
+.cover .ico.brand-apps    { background: #fff; color: var(--navy); }
 .cover .ico.brand-mcp     { background: #fff; }
-.cover .ico.brand-red     { background: var(--red); color: #fff; }
+.cover .ico.brand-red     { background: #fff; color: var(--red); }
 .cover .arrow {
   color: #fff; opacity: .95;
   font-weight: 800; font-size: 24px;

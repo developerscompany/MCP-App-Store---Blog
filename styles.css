@@ -191,12 +191,14 @@ a { color: inherit; text-decoration: none; }
   width: 100%; height: 100%; object-fit: cover;
   transition: transform .6s ease;
 }
-.cover .cv-right::after { /* navy fade — keeps icons legible */
+.cover .cv-right::after { /* category-colored fade — keeps icons legible */
   content:""; position:absolute; inset:0;
-  background:
-    radial-gradient(120% 90% at 50% 50%, rgba(18,35,61,.55) 0, rgba(18,35,61,.78) 100%),
-    linear-gradient(135deg, rgba(11,23,41,.45) 0%, rgba(18,35,61,.35) 100%);
+  background: linear-gradient(135deg, rgba(18,35,61,.65) 0%, rgba(18,35,61,.85) 100%);
 }
+.cover.howto    .cv-right::after { background: linear-gradient(135deg, rgba(41,105,204,.60) 0%, rgba(41,105,204,.85) 100%); }
+.cover.compare  .cv-right::after { background: linear-gradient(135deg, rgba(214,44,44,.60) 0%, rgba(214,44,44,.85) 100%); }
+.cover.insight  .cv-right::after { background: linear-gradient(135deg, rgba(18,35,61,.65) 0%, rgba(18,35,61,.88) 100%); }
+.cover.platform .cv-right::after { background: linear-gradient(135deg, rgba(31,84,168,.60) 0%, rgba(31,84,168,.85) 100%); }
 .card:hover .cover .cv-right img,
 .featured-card:hover .cover .cv-right img { transform: scale(1.05); }
 
@@ -274,7 +276,8 @@ a { color: inherit; text-decoration: none; }
 /* ===================== Filter bar ===================== */
 .filter-bar {
   border-bottom: 1px solid var(--line);
-  background: #fff; position: sticky; top: 64px; z-index: 50;
+  background: rgba(255,255,255,.95); backdrop-filter: blur(8px);
+  position: sticky; top: 72px; z-index: 50;
 }
 .filter-bar .inner {
   max-width: var(--maxw); margin: 0 auto; padding: 18px 24px;
@@ -302,6 +305,11 @@ a { color: inherit; text-decoration: none; }
   margin-left: auto; display:flex; align-items:center; gap: 10px;
   background: var(--tint); border: 1px solid var(--line); border-radius: 100px;
   padding: 8px 16px; color: var(--muted); font-size: 14px; min-width: 240px;
+  transition: border-color .15s ease, box-shadow .15s ease, background .15s ease;
+}
+.filter-bar .search:focus-within {
+  border-color: var(--blue); background: #fff; color: var(--navy);
+  box-shadow: 0 0 0 4px rgba(41,105,204,.15);
 }
 .filter-bar .search svg { width: 16px; height: 16px; }
 .filter-bar .search input {

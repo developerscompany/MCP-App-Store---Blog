@@ -411,6 +411,7 @@ a { color: inherit; text-decoration: none; }
   font-size: 12px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase;
   color: #9cc1ff; margin-bottom: 14px;
 }
+.lead-card .eyebrow svg { width: 14px; height: 14px; flex: none; }
 .lead-card h3 { margin: 0 0 12px; font-size: 30px; font-weight: 800; line-height: 1.18; }
 .lead-card p { margin: 0 0 22px; color: rgba(255,255,255,.78); font-size: 16px; line-height: 1.5; max-width: 480px; }
 .lead-card .proof { display:flex; align-items:center; gap: 14px; font-size: 13.5px; color: rgba(255,255,255,.65); }
@@ -443,7 +444,8 @@ a { color: inherit; text-decoration: none; }
   max-width: var(--maxw); margin: 0 auto; padding: 48px 24px;
   display:flex; align-items:center; gap: 36px; flex-wrap: wrap;
 }
-.proof-bar .label { font-size: 12px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+.proof-bar .label { font-size: 12px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); display:inline-flex; align-items: center; gap: 8px; }
+.proof-bar .label svg { width: 16px; height: 16px; flex: none; color: var(--blue); }
 .proof-bar .logos { display:flex; gap: 36px; align-items: center; flex-wrap: wrap; }
 .proof-bar .logo {
   font-family: var(--font); font-weight: 800; color: #93a0b4;
@@ -747,6 +749,7 @@ a { color: inherit; text-decoration: none; }
   margin-top: 12px; font-size: 12px; color: rgba(255,255,255,.55);
   display:flex; align-items:center; gap: 6px;
 }
+.rail .card-rail.personal .body .micro svg { width: 13px; height: 13px; flex: none; }
 
 /* ===================== Personal bottom CTA (KeenEthics blue + photo) ===================== */
 .cta-block.personal {

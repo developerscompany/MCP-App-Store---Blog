@@ -923,8 +923,18 @@ a { color: inherit; text-decoration: none; }
   .article-hero .share { margin-left: 0; }
   .article-cover .cover { aspect-ratio: 16 / 9; }
   .inline-cta { padding: 20px; }
-  .inline-cta .footer-row { flex-direction: column; align-items: stretch; gap: 12px; }
-  .inline-cta .action { margin-left: 0; }
+  .inline-cta .footer-row {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+      "photo name"
+      "btn btn";
+    gap: 12px 14px;
+    align-items: center;
+  }
+  .inline-cta .person-photo-wrap { grid-area: photo; }
+  .inline-cta .by { grid-area: name; }
+  .inline-cta .action { grid-area: btn; margin-left: 0; }
   .inline-cta .action .btn { width: 100%; justify-content: center; }
   .cta-section { margin: 60px auto 70px; }
   .cta-block,

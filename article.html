@@ -103,14 +103,12 @@
   <aside class="toc">
     <h6>On this page</h6>
     <ol id="toc">
-      <li class="active">What Claude Connectors actually are</li>
-      <li>Before you start: the prereq checklist</li>
-      <li>Step 1 — Build your manifest</li>
-      <li>Step 2 — OAuth &amp; scopes</li>
-      <li>Step 3 — Submission package</li>
-      <li>Step 4 — The review process</li>
-      <li>Step 5 — Common rejection reasons</li>
-      <li>Step 6 — Post-approval setup</li>
+      <li class="active" data-target="s1"><a href="#s1">What Claude Connectors actually are</a></li>
+      <li data-target="s2"><a href="#s2">Before you start: the prereq checklist</a></li>
+      <li data-target="s3"><a href="#s3">Step 1 — Build your manifest</a></li>
+      <li data-target="s4"><a href="#s4">Step 2 — OAuth &amp; scopes</a></li>
+      <li data-target="s5"><a href="#s5">Step 5 — Common rejection reasons</a></li>
+      <li data-target="s6"><a href="#s6">Step 6 — Post-approval setup</a></li>
     </ol>
   </aside>
 
@@ -135,11 +133,11 @@
       </div>
     </div>
 
-    <h2>What Claude Connectors actually are</h2>
+    <h2 id="s1">What Claude Connectors actually are</h2>
     <p>A Claude Connector is Anthropic's official packaging format for connecting a third-party tool to Claude. It defines what tools the app exposes, what data it can read/write, and how authentication happens. Think of it as the bridge between your existing API surface and the Claude interface — without making users leave the chat.</p>
     <p>Unlike custom GPTs, Connectors run inside Claude's permission model, which means you get strong auth guarantees out of the box but lose some flexibility in how the UX flows. The trade-off makes sense for any app where <code>data sensitivity</code> matters.</p>
 
-    <h2>Before you start: the prerequisite checklist</h2>
+    <h2 id="s2">Before you start: the prerequisite checklist</h2>
     <p>Three things you need locked down before opening the developer console:</p>
     <ol>
       <li>A <b>public-facing production endpoint</b> with TLS — staging URLs are rejected at submission.</li>
@@ -151,13 +149,13 @@
       In 14 reviewed submissions, the privacy policy mismatch caused 8 rejections. It's the #1 silent killer.
     </blockquote>
 
-    <h2>Step 1 — Build your manifest</h2>
+    <h2 id="s3">Step 1 — Build your manifest</h2>
     <p>The manifest is the JSON contract that tells Claude what your app can do. You'll declare each tool as a discrete capability with its own scope. Don't bundle multiple operations into one tool — the review team rejects "kitchen sink" tools that try to do too much.</p>
 
     <h3>Naming your tools</h3>
     <p>Tool names should be verb-led, lowercase, snake_case, and read as English. <code>create_invoice</code> passes; <code>InvoiceCreatorV2</code> fails review.</p>
 
-    <h2>Step 2 — OAuth &amp; scopes</h2>
+    <h2 id="s4">Step 2 — OAuth &amp; scopes</h2>
     <p>Claude requires PKCE flow for all Connectors. If you're using an older OAuth library that doesn't support PKCE, plan a sprint to upgrade before submission — there's no workaround.</p>
     <p>For scopes: declare the minimum surface area you need. Reviewers actively penalize over-scoped requests, and end-users see the scope list at install time, so a clean scope list also improves your activation rate.</p>
 
@@ -176,7 +174,7 @@
       </div>
     </div>
 
-    <h2>Step 5 — Common rejection reasons</h2>
+    <h2 id="s5">Step 5 — Common rejection reasons</h2>
     <p>From 30+ submissions we've shepherded, the rejection reasons cluster tightly:</p>
     <ul>
       <li><b>Privacy policy mismatch</b> — the policy doesn't name Anthropic or Claude.</li>
@@ -188,7 +186,7 @@
 
     <p>Each of these is preventable with 15 minutes of review before you click submit. The cost of fixing them <i>after</i> a rejection is a full re-queue, which is typically 7–10 business days.</p>
 
-    <h2>Step 6 — Post-approval setup</h2>
+    <h2 id="s6">Step 6 — Post-approval setup</h2>
     <p>Once approved, you have two priorities: <b>discoverability</b> (so users can actually find you) and <b>activation</b> (so they don't bounce on first install). Both come down to the metadata you set in the directory listing — and we cover that whole flow in the next article.</p>
 
     <!-- Author bio at end -->
@@ -369,17 +367,40 @@
 </footer>
 
 <script>
+  // Reading progress bar
   const bar = document.getElementById('readProgress');
   window.addEventListener('scroll', () => {
     const h = document.documentElement;
     const max = h.scrollHeight - h.clientHeight;
     bar.style.width = (h.scrollTop / max * 100) + '%';
-  });
-  const tocItems = document.querySelectorAll('.toc li');
-  tocItems.forEach(li => li.addEventListener('click', () => {
+  }, { passive: true });
+
+  // Scroll-spy: highlight TOC entry whose section is currently being read
+  const tocItems = document.querySelectorAll('.toc li[data-target]');
+  const tocMap = new Map();
+  tocItems.forEach(li => tocMap.set(li.dataset.target, li));
+
+  const sections = document.querySelectorAll('.article-body h2[id]');
+  const setActive = (id) => {
     tocItems.forEach(x => x.classList.remove('active'));
-    li.classList.add('active');
-  }));
+    const li = tocMap.get(id);
+    if (li) li.classList.add('active');
+  };
+
+  const visible = new Set();
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) visible.add(e.target.id);
+      else visible.delete(e.target.id);
+    });
+    // pick the topmost visible h2
+    if (visible.size) {
+      const ordered = Array.from(sections).map(h => h.id).filter(id => visible.has(id));
+      if (ordered.length) setActive(ordered[0]);
+    }
+  }, { rootMargin: '-90px 0px -65% 0px' });
+
+  sections.forEach(h => io.observe(h));
 </script>
 </body>
 </html>

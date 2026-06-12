@@ -554,15 +554,44 @@ a { color: inherit; text-decoration: none; }
   display:grid; grid-template-columns: 220px minmax(0, 1fr) 300px; gap: 48px;
   align-items: flex-start;
 }
-.article-layout .toc, .article-layout .rail { position: sticky; top: 90px; }
+.article-layout .toc, .article-layout .rail {
+  position: sticky; top: 90px;
+  max-height: calc(100vh - 110px);
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--line) transparent;
+  padding-right: 4px;
+}
+.article-layout .toc::-webkit-scrollbar,
+.article-layout .rail::-webkit-scrollbar { width: 6px; }
+.article-layout .toc::-webkit-scrollbar-track,
+.article-layout .rail::-webkit-scrollbar-track { background: transparent; }
+.article-layout .toc::-webkit-scrollbar-thumb,
+.article-layout .rail::-webkit-scrollbar-thumb {
+  background: var(--line); border-radius: 3px;
+}
+.article-layout .toc::-webkit-scrollbar-thumb:hover,
+.article-layout .rail::-webkit-scrollbar-thumb:hover {
+  background: var(--muted-2);
+}
 .article-layout .toc h6, .article-layout .rail h6 {
   font-size: 11px; font-weight: 800; color: var(--muted); letter-spacing: .12em; text-transform: uppercase;
   margin: 0 0 14px;
 }
 .toc ol { list-style: none; padding: 0; margin: 0; }
-.toc li { padding: 6px 12px; border-left: 2px solid var(--line); color: var(--muted); font-size: 13.5px; line-height: 1.5; cursor: pointer; }
+.toc li {
+  padding: 0; border-left: 2px solid var(--line);
+  color: var(--muted); font-size: 13.5px; line-height: 1.5;
+  transition: color .15s ease, border-color .15s ease, background .15s ease;
+}
+.toc li a {
+  display: block; padding: 7px 12px; color: inherit; text-decoration: none;
+}
 .toc li:hover { color: var(--blue); border-color: var(--blue); }
 .toc li.active { color: var(--navy); font-weight: 700; border-color: var(--red); background: var(--tint); }
+
+/* offset anchor scroll so h2 lands below sticky header */
+.article-body h2[id] { scroll-margin-top: 90px; }
 
 /* article body */
 .article-body { font-size: 17px; line-height: 1.72; color: #2A3A55; max-width: 720px; }

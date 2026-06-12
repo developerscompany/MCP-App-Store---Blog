@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>document.documentElement.classList.add('js');</script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>How to Submit MCP App to Claude Connectors · MCP App Store</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="read-progress" id="readProgress"></div>
+
+<div class="demo-bar">
+  <strong>Blog redesign · prototype</strong>
+  <span style="opacity:.65">KeenEthics design tokens · MCP App Store branding</span>
+  <nav>
+    <a href="index.html">Index page</a>
+    <a class="active" href="article.html">Article page</a>
+  </nav>
+</div>
+
+<header class="site-header">
+  <div class="inner">
+    <a class="brand" href="index.html">
+      <span class="name">MCP App Store</span>
+      <span class="lab">by <strong>KeenEthics</strong> Labs</span>
+    </a>
+    <nav class="site-nav">
+      <a href="#">Directory</a>
+      <a href="#">Tool Discovery</a>
+      <a class="current" href="index.html">Blog</a>
+    </nav>
+    <div class="header-spacer"></div>
+    <div class="header-cta">
+      <button class="search-btn" aria-label="Search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+      </button>
+      <a class="btn btn-red" href="#">Build with KeenEthics</a>
+    </div>
+  </div>
+</header>
+
+<div class="breadcrumb">
+  <a href="index.html">Blog</a>
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+  <a href="#">How-to</a>
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+  <span style="color: var(--navy);">Submit to Claude Connectors</span>
+</div>
+
+<section class="article-hero">
+  <div class="badges">
+    <span style="font-size: 11px; font-weight: 800; color: var(--cat-howto); background: rgba(41,105,204,.10); padding: 5px 10px; border-radius: 4px; letter-spacing:.08em; display:inline-flex; align-items:center; gap: 6px;"><span style="width:7px; height:7px; border-radius:2px; background: var(--cat-howto);"></span>HOW-TO</span>
+    <span style="font-size: 11px; font-weight: 800; color: var(--muted); background: var(--tint); padding: 5px 10px; border-radius: 4px; letter-spacing:.08em;">CLAUDE · ANTHROPIC</span>
+    <span style="font-size: 11px; font-weight: 800; color: var(--red); background: rgba(214,44,44,.08); padding: 5px 10px; border-radius: 4px; letter-spacing:.08em;">▸ FEATURED</span>
+  </div>
+  <h1>How to submit your MCP app to <span class="accent">Claude Connectors.</span></h1>
+  <div class="author-row">
+    <div class="author">
+      <div class="avatar">MK</div>
+      <div class="author-info">
+        <b>Mykyta Kuzmenko</b>
+        <span>Head of MCP Research · KeenEthics Labs</span>
+      </div>
+    </div>
+    <div class="meta-info">
+      <span>Jun 1, 2026</span>
+      <span class="dot"></span>
+      <span>14 min read</span>
+      <span class="dot"></span>
+      <span>Updated weekly</span>
+    </div>
+    <div class="share">
+      <button class="share-btn" aria-label="Share on X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 4h-3l-4 6-4-6H4l6 9-7 7h3l5-5 5 5h3l-7-7z"/></svg></button>
+      <button class="share-btn" aria-label="Share on LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 4h4v16H4zM12 4h3v2c.7-1.2 2-2.4 4-2.4 3.6 0 5 2.4 5 6V20h-4v-9c0-2-1-3-2.5-3S15 9 15 11v9h-4V4z"/></svg></button>
+      <button class="share-btn" aria-label="Copy link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 007 0l3-3a5 5 0 00-7-7l-1 1"/><path d="M14 11a5 5 0 00-7 0l-3 3a5 5 0 007 7l1-1"/></svg></button>
+      <button class="share-btn" aria-label="Bookmark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/></svg></button>
+    </div>
+  </div>
+</section>
+
+<!-- ARTICLE COVER (split, big) -->
+<div class="article-cover">
+  <div class="cover lg howto">
+    <div class="cv-left">
+      <div class="icon-set">
+        <span class="ico dark">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+        </span>
+        <span class="arrow">→</span>
+        <span class="ico brand-claude">
+          <svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="2"/><circle cx="12" cy="4" r="1.5"/><circle cx="12" cy="20" r="1.5"/><circle cx="4" cy="12" r="1.5"/><circle cx="20" cy="12" r="1.5"/><circle cx="6" cy="6" r="1.2"/><circle cx="18" cy="6" r="1.2"/><circle cx="6" cy="18" r="1.2"/><circle cx="18" cy="18" r="1.2"/></svg>
+        </span>
+      </div>
+    </div>
+    <div class="cv-right">
+      <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=700&auto=format&fit=crop&q=80" alt="" loading="lazy" />
+    </div>
+    <span class="cat howto">How-to · Featured guide</span>
+    <span class="vendor">
+      <span class="logo claude"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="3"/></svg></span>
+      Claude · Anthropic
+    </span>
+    <span class="stamp">Updated · Jun 2026</span>
+  </div>
+</div>
+
+<section class="article-layout">
+
+  <aside class="toc">
+    <h6>On this page</h6>
+    <ol id="toc">
+      <li class="active">What Claude Connectors actually are</li>
+      <li>Before you start: the prereq checklist</li>
+      <li>Step 1 — Build your manifest</li>
+      <li>Step 2 — OAuth &amp; scopes</li>
+      <li>Step 3 — Submission package</li>
+      <li>Step 4 — The review process</li>
+      <li>Step 5 — Common rejection reasons</li>
+      <li>Step 6 — Post-approval setup</li>
+    </ol>
+  </aside>
+
+  <main class="article-body">
+
+    <p class="first-letter"><b>If you're shipping an MCP app, Claude Connectors is one of the fastest distribution channels you can pick.</b> But the submission process has more friction than the docs let on — most apps we see get rejected on the first round for the same five reasons.</p>
+
+    <p>This guide walks through every step of the submission, with the exact decisions you need to make at each stage. By the end you'll have a submission package that passes review on the first try, and a connector that's ready to ship to Claude's userbase.</p>
+
+    <!-- ===== INLINE CONTEXTUAL CTA (personalized) ===== -->
+    <div class="inline-cta">
+      <div class="person-photo-wrap">
+        <img class="person-photo" src="daria.webp" alt="Daria Hlavcheva" />
+      </div>
+      <div class="copy">
+        <h4>Already mid-submission and something's off?</h4>
+        <p>I've shepherded 20+ Connectors at KeenEthics. Send me your manifest — I'll spot rejection risks in a free 30-min review.</p>
+        <span class="by">— <b>Daria Hlavcheva</b>, Head of Partner Engagement</span>
+      </div>
+      <div class="action">
+        <a class="btn btn-red" href="#">Get a free review</a>
+      </div>
+    </div>
+
+    <h2>What Claude Connectors actually are</h2>
+    <p>A Claude Connector is Anthropic's official packaging format for connecting a third-party tool to Claude. It defines what tools the app exposes, what data it can read/write, and how authentication happens. Think of it as the bridge between your existing API surface and the Claude interface — without making users leave the chat.</p>
+    <p>Unlike custom GPTs, Connectors run inside Claude's permission model, which means you get strong auth guarantees out of the box but lose some flexibility in how the UX flows. The trade-off makes sense for any app where <code>data sensitivity</code> matters.</p>
+
+    <h2>Before you start: the prerequisite checklist</h2>
+    <p>Three things you need locked down before opening the developer console:</p>
+    <ol>
+      <li>A <b>public-facing production endpoint</b> with TLS — staging URLs are rejected at submission.</li>
+      <li>An <b>OAuth 2.0 provider</b> (PKCE flow) — Claude won't accept API-key authentication for Connectors.</li>
+      <li>A <b>privacy policy URL</b> that explicitly mentions Anthropic and Claude — generic policies are rejected.</li>
+    </ol>
+
+    <blockquote>
+      In 14 reviewed submissions, the privacy policy mismatch caused 8 rejections. It's the #1 silent killer.
+    </blockquote>
+
+    <h2>Step 1 — Build your manifest</h2>
+    <p>The manifest is the JSON contract that tells Claude what your app can do. You'll declare each tool as a discrete capability with its own scope. Don't bundle multiple operations into one tool — the review team rejects "kitchen sink" tools that try to do too much.</p>
+
+    <h3>Naming your tools</h3>
+    <p>Tool names should be verb-led, lowercase, snake_case, and read as English. <code>create_invoice</code> passes; <code>InvoiceCreatorV2</code> fails review.</p>
+
+    <h2>Step 2 — OAuth &amp; scopes</h2>
+    <p>Claude requires PKCE flow for all Connectors. If you're using an older OAuth library that doesn't support PKCE, plan a sprint to upgrade before submission — there's no workaround.</p>
+    <p>For scopes: declare the minimum surface area you need. Reviewers actively penalize over-scoped requests, and end-users see the scope list at install time, so a clean scope list also improves your activation rate.</p>
+
+    <!-- ===== SECOND INLINE CTA (lead-magnet PDF) ===== -->
+    <div class="inline-cta" style="background: linear-gradient(120deg, #fff 0%, var(--tint) 100%);">
+      <div class="person-photo-wrap">
+        <img class="person-photo" src="daria.webp" alt="Daria Hlavcheva" />
+      </div>
+      <div class="copy">
+        <h4>Download the manifest checklist</h4>
+        <p>A printable 1-pager I send to every client — every field reviewers actually look at. Used by 400+ teams. Free.</p>
+        <span class="by">— <b>Daria Hlavcheva</b>, Head of Partner Engagement</span>
+      </div>
+      <div class="action">
+        <a class="btn btn-blue" href="#">Get the checklist</a>
+      </div>
+    </div>
+
+    <h2>Step 5 — Common rejection reasons</h2>
+    <p>From 30+ submissions we've shepherded, the rejection reasons cluster tightly:</p>
+    <ul>
+      <li><b>Privacy policy mismatch</b> — the policy doesn't name Anthropic or Claude.</li>
+      <li><b>Over-scoped OAuth</b> — asking for write access when read-only would do.</li>
+      <li><b>Vague tool descriptions</b> — reviewers can't tell what the tool actually does from the description.</li>
+      <li><b>Production endpoint flaky</b> — reviewer pings get a 502; submission auto-rejected.</li>
+      <li><b>Missing example invocations</b> — without 3+ realistic examples, the tool feels speculative.</li>
+    </ul>
+
+    <p>Each of these is preventable with 15 minutes of review before you click submit. The cost of fixing them <i>after</i> a rejection is a full re-queue, which is typically 7–10 business days.</p>
+
+    <h2>Step 6 — Post-approval setup</h2>
+    <p>Once approved, you have two priorities: <b>discoverability</b> (so users can actually find you) and <b>activation</b> (so they don't bounce on first install). Both come down to the metadata you set in the directory listing — and we cover that whole flow in the next article.</p>
+
+    <!-- Author bio at end -->
+    <div class="author-card">
+      <div class="avatar">MK</div>
+      <div>
+        <b>Mykyta Kuzmenko</b>
+        <span class="role">Head of MCP Research · KeenEthics Labs</span>
+        <p>Mykyta leads MCP research at KeenEthics. He's shepherded 20+ submissions across Claude Connectors, ChatGPT Apps, and Cursor extensions, and writes <a href="#">The MCP Brief</a> every Tuesday.</p>
+        <a href="#">More from Mykyta →</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Sticky rail — personalized with Daria -->
+  <aside class="rail">
+    <div class="card-rail personal">
+      <div class="photo-row">
+        <img src="daria.webp" alt="Daria Hlavcheva" />
+        <div class="who">
+          <b>Daria Hlavcheva</b>
+          <span>Head of Partner Engagement</span>
+          <span class="live">Online now</span>
+        </div>
+      </div>
+      <div class="body">
+        <h5>Stuck on a step? Book a free 30-min Connector review.</h5>
+        <p>Send me your manifest, scopes and reject-risk concerns. Zero pitch — just useful feedback before you submit.</p>
+        <a class="btn btn-red" href="#">Book a free review</a>
+        <div class="micro">📅 Avg slot · this week</div>
+      </div>
+    </div>
+
+    <div class="card-rail">
+      <h6 style="color: var(--muted);">Lead magnet · PDF</h6>
+      <h5>The Connector submission checklist</h5>
+      <p>Every reviewer-tested field on one printable page. Used by 400+ teams.</p>
+      <a class="btn btn-blue" href="#">Download free</a>
+    </div>
+
+    <div class="card-rail">
+      <h6 style="color: var(--muted);">Stay in the loop</h6>
+      <h5>The MCP Brief — weekly</h5>
+      <p>Submission data, ranking changes, and the one playbook each week worth your time.</p>
+      <a class="btn btn-outline" href="#">Subscribe</a>
+      <div class="author-pill">
+        <div class="avatar">MK</div>
+        <div><b>Mykyta Kuzmenko</b><span>Head of MCP Research</span></div>
+      </div>
+    </div>
+  </aside>
+
+</section>
+
+<!-- RELATED -->
+<section class="related">
+  <h2>Keep reading</h2>
+  <div class="grid">
+
+    <a class="card" href="article.html">
+      <div class="cover howto">
+        <div class="cv-left">
+          <div class="icon-set">
+            <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/></svg></span>
+            <span class="arrow">+</span>
+            <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg></span>
+          </div>
+        </div>
+        <div class="cv-right"><img src="https://images.unsplash.com/photo-1555255707-c07966088b7b?w=700&h=700&auto=format&fit=crop&q=80" alt="" loading="lazy" /></div>
+        <span class="cat howto">How-to</span>
+        <span class="vendor"><span class="logo openai"></span>OpenAI · Apps</span>
+      </div>
+      <div class="meta-row"><span class="badge howto">How-to</span><span>10 min</span></div>
+      <h3>Setting Up Metadata for Indirect Prompting</h3>
+    </a>
+
+    <a class="card" href="article.html">
+      <div class="cover insight">
+        <div class="cv-left">
+          <div class="icon-set">
+            <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.5 9-8 10-4.5-1-8-5-8-10V6z"/></svg></span>
+            <span class="arrow">×</span>
+            <span class="ico brand-claude"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="2.5"/></svg></span>
+          </div>
+        </div>
+        <div class="cv-right"><img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=700&h=700&auto=format&fit=crop&q=80" alt="" loading="lazy" /></div>
+        <span class="cat insight">Insight</span>
+        <span class="vendor"><span class="logo claude"></span>Claude · Anthropic</span>
+      </div>
+      <div class="meta-row"><span class="badge insight">Insight</span><span>12 min</span></div>
+      <h3>How Claude's Safety Approach Actually Works</h3>
+    </a>
+
+    <a class="card" href="article.html">
+      <div class="cover compare">
+        <div class="cv-left">
+          <div class="icon-set">
+            <span class="ico brand-openai"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.5 4-2.5 4-2.5-4z"/></svg></span>
+            <span class="arrow vs">VS</span>
+            <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/></svg></span>
+          </div>
+        </div>
+        <div class="cv-right"><img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=700&h=700&auto=format&fit=crop&q=80" alt="" loading="lazy" /></div>
+        <span class="cat compare">Compare</span>
+        <span class="vendor">ChatGPT Apps · GPTs</span>
+      </div>
+      <div class="meta-row"><span class="badge compare">Compare</span><span>10 min</span></div>
+      <h3>ChatGPT Apps vs GPTs</h3>
+    </a>
+  </div>
+</section>
+
+<!-- BIG BOTTOM CTA — personalized with Daria -->
+<section class="cta-section">
+  <div class="cta-block personal">
+    <div class="photo-wrap">
+      <img src="daria.webp" alt="Daria Hlavcheva — Head of Partner Engagement at KeenEthics" />
+      <span class="quote">Avg reply · a few hours</span>
+      <p class="person-sig">— <b>Daria Hlavcheva</b><br/>Head of Partner Engagement · KeenEthics</p>
+    </div>
+    <div>
+      <h2>Shipping a Connector and want it to <span class="accent">land first try?</span></h2>
+      <p>I'm Daria, Head of Partner Engagement. Our team has shepherded 20+ submissions through Claude Connectors, ChatGPT Apps and Cursor. We know exactly where they trip — and how to avoid each one.</p>
+      <div class="actions">
+        <a class="btn btn-red" href="#">Talk to Daria
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <a class="btn btn-ghost" href="#">See case studies</a>
+      </div>
+      <div class="signature">
+        <span>— <b>Daria Hlavcheva</b>, Head of Partner Engagement · KeenEthics</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="inner">
+    <div class="about">
+      <a class="brand" href="index.html">
+        <span class="name">MCP App Store</span>
+        <span class="lab">by <strong>KeenEthics</strong> Labs</span>
+      </a>
+      <p style="margin-top: 14px;">Directory-first research for teams evaluating ChatGPT and Claude connectors. A lab project from <a href="https://keenethics.com" style="color: var(--blue); text-decoration: underline;">KeenEthics</a>.</p>
+    </div>
+    <div>
+      <h6>Navigation</h6>
+      <ul>
+        <li><a href="#">Directory</a></li>
+        <li><a href="#">Tool Discovery</a></li>
+        <li><a href="index.html">Blog</a></li>
+        <li><a href="#">Newsletter</a></li>
+      </ul>
+    </div>
+    <div>
+      <h6>Categories</h6>
+      <ul>
+        <li><a href="#">How-to</a></li>
+        <li><a href="#">Compare</a></li>
+        <li><a href="#">Insight</a></li>
+        <li><a href="#">Platform deep-dives</a></li>
+      </ul>
+    </div>
+    <div>
+      <h6>Build with us</h6>
+      <ul>
+        <li><a href="https://keenethics.com">KeenEthics.com</a></li>
+        <li><a href="#">Case studies</a></li>
+        <li><a href="#">Get a free audit</a></li>
+        <li><a href="#">Talk to our team</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="legal">
+    <span>© 2026 KeenEthics. All rights reserved.</span>
+    <span><a href="#">Privacy</a> · <a href="#">Terms</a></span>
+  </div>
+</footer>
+
+<script>
+  const bar = document.getElementById('readProgress');
+  window.addEventListener('scroll', () => {
+    const h = document.documentElement;
+    const max = h.scrollHeight - h.clientHeight;
+    bar.style.width = (h.scrollTop / max * 100) + '%';
+  });
+  const tocItems = document.querySelectorAll('.toc li');
+  tocItems.forEach(li => li.addEventListener('click', () => {
+    tocItems.forEach(x => x.classList.remove('active'));
+    li.classList.add('active');
+  }));
+</script>
+</body>
+</html>

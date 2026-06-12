@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>document.documentElement.classList.add('js');</script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Blog · MCP App Store — by KeenEthics</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="demo-bar">
+  <strong>Blog redesign · prototype</strong>
+  <span style="opacity:.65">KeenEthics design tokens · MCP App Store branding</span>
+  <nav>
+    <a class="active" href="index.html">Index page</a>
+    <a href="article.html">Article page</a>
+  </nav>
+</div>
+
+<header class="site-header">
+  <div class="inner">
+    <a class="brand" href="/">
+      <span class="name">MCP App Store</span>
+      <span class="lab">by <strong>KeenEthics</strong> Labs</span>
+    </a>
+    <nav class="site-nav">
+      <a href="#">Directory</a>
+      <a href="#">Tool Discovery</a>
+      <a class="current" href="#">Blog</a>
+    </nav>
+    <div class="header-spacer"></div>
+    <div class="header-cta">
+      <button class="search-btn" aria-label="Search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+      </button>
+      <a class="btn btn-red" href="#">Build with KeenEthics</a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO (H1 + subhead from live site) -->
+<section class="hero">
+  <div class="inner">
+    <div>
+      <span class="eyebrow">✦ All Insights</span>
+      <h1>MCP App intelligence for teams <span class="accent">building and evaluating</span> AI tools.</h1>
+      <p>Market signals, connector research, app submission formats, and practical guides for teams choosing between ChatGPT Apps, Claude connectors, or custom AI tools.</p>
+      <div class="meta">
+        <div class="stat"><b>17</b><span>in-depth guides</span></div>
+        <div class="stat-sep"></div>
+        <div class="stat"><b>2,400+</b><span>founders subscribed</span></div>
+        <div class="stat-sep"></div>
+        <div class="stat"><b>weekly</b><span>new drops</span></div>
+      </div>
+    </div>
+
+    <!-- FEATURED — How to Submit MCP App to Claude Connectors -->
+    <a class="featured-card" href="article.html">
+      <div class="cover lg howto">
+        <div class="cv-left">
+          <div class="icon-set">
+            <!-- MCP App Store mark (paperclip-M) -->
+            <span class="ico brand-mcp"><img src="mcp-icon.png" alt="MCP" /></span>
+            <span class="arrow">→</span>
+            <!-- Claude orange asterisk -->
+            <span class="ico brand-claude">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="2" y1="12" x2="22" y2="12"/><line x1="3.34" y1="7" x2="20.66" y2="17"/><line x1="7" y1="3.34" x2="17" y2="20.66"/><line x1="12" y1="2" x2="12" y2="22"/><line x1="17" y1="3.34" x2="7" y2="20.66"/><line x1="20.66" y1="7" x2="3.34" y2="17"/></svg>
+            </span>
+          </div>
+        </div>
+        <div class="cv-right">
+          <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=700&auto=format&fit=crop&q=80" alt="" loading="lazy" />
+        </div>
+      </div>
+      <div class="below">
+        <div class="badge-row">
+          <span style="font-size: 11px; font-weight: 800; color: var(--blue); background: rgba(41,105,204,.10); padding: 4px 9px; border-radius: 4px; letter-spacing:.08em;">▸ FEATURED</span>
+        </div>
+        <h3>How to Submit MCP App to Claude Connectors</h3>
+        <p>The submission process unpacked end-to-end — manifest, OAuth scopes, review checklist, and the exact mistakes that kill 60% of applications on the first round.</p>
+        <div class="read-row">
+          <span>Mykyta Kuzmenko</span><span class="dot"></span>
+          <span>Jun 1, 2026</span><span class="dot"></span>
+          <span>14 min read</span>
+        </div>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- FILTERS -->
+<div class="filter-bar">
+  <div class="inner">
+    <button class="pill active">All articles</button>
+    <button class="pill howto"><span class="dot"></span>How-to</button>
+    <button class="pill compare"><span class="dot"></span>Compare</button>
+    <button class="pill insight"><span class="dot"></span>Insight</button>
+    <button class="pill platform"><span class="dot"></span>Platform</button>
+    <div class="search">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+      <input type="text" placeholder="Search 17 guides…" />
+    </div>
+  </div>
+</div>
+
+<!-- GRID 1 -->
+<section class="grid-section">
+  <div class="head">
+    <div>
+      <h2>Latest from the field</h2>
+      <p>Fresh research and playbooks · Updated weekly</p>
+    </div>
+    <a class="btn-link" href="#">View all 17 guides →</a>
+  </div>
+
+  <div class="grid">
+
+    <!-- 2. Setting Up Metadata for Indirect Prompting -->
+    <a class="card" href="article.html">
+      <div class="cover howto">
+        <div class="cv-left">
+          <div class="icon-set">
+            <span class="ico">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 11-4 0v-.09a1.65 1.65 0 00-1-1.51 1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 11-2.83-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 110-4h.09a1.65 1.65 0 001.51-1 1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 112.83-2.83l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 114 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 112.83 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 110 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+            </span>
+            <span class="ico">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/><path d="M8 13l2 2 2-2"/><path d="M10 11v4"/></svg>
+            </span>
+          </div>
+        </div>
+        <div class="cv-right"><img src="https://images.unsplash.com/photo-1555255707-c07966088b7b?w=700&h=700&auto=format&fit=crop&q=80" alt="" loading="lazy" /></div>
+      </div>
+      <div class="meta-row"><span class="badge howto">How-to</span><span>Jun 1, 2026</span><span class="dot"></span><span>10 min</span><span class="dot"></span><span>By <b>Mykyta Kuzmenko</b></span></div>
+      <h3>Setting Up Metadata for Indirect Prompting</h3>
+      <p>The exact metadata fields that determine when ChatGPT decides to surface your app — and the ones that quietly bury it.</p>
+    </a>
+
+    <!-- 3. How to Submit Your App to ChatGPT Apps -->
+    <a class="card" href="article.html">
+      <div class="cover howto">
+        <div class="cv-left">
+          <div class="icon-set">
+            <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 010 18M12 3a14 14 0 000 18"/></svg></span>
+            <span class="arrow">→</span>
+            <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 16V4M6 10l6-6 6 6"/><path d="M4 20h16"/></svg></span>
+            <span class="arrow">→</span>
+            <span class="ico brand-openai"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M16.5 4.5a4.5 4.5 0 00-9 0v0a4.5 4.5 0 00-3.9 6.8v0a4.5 4.5 0 003.9 6.8v0a4.5 4.5 0 009 0v0a4.5 4.5 0 003.9-6.8v0a4.5 4.5 0 00-3.9-6.8z"/><path d="M8 9l8 4.5M16 9L8 13.5"/></svg></span>
+          </div>
+        </div>
+        <div class="cv-right"><img src="https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?w=700&h=700&auto=format&fit=crop&q=80" alt="" loading="lazy" /></div>
+      </div>
+      <div class="meta-row"><span class="badge howto">How-to</span><span>May 28, 2026</span><span class="dot"></span><span>8 min</span><span class="dot"></span><span>By <b>Mykyta Kuzmenko</b></span></div>
+      <h3>How to Submit Your App to ChatGPT Apps</h3>
+      <p>The full submission flow: manifest, verification, store listing, and the review timeline you should actually expect.</p>
+    </a>
+
+    <!-- 4. How Claude's Safety Approach Actually Works - And Why It Matters for Business -->
+    <a class="card" href="article.html">
+      <div class="cover insight">
+        <div class="cv-left">
+          <div class="icon-set">
+            <span class="ico brand-claude"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="2" y1="12" x2="22" y2="12"/><line x1="3.34" y1="7" x2="20.66" y2="17"/><line x1="7" y1="3.34" x2="17" y2="20.66"/><line x1="12" y1="2" x2="12" y2="22"/><line x1="17" y1="3.34" x2="7" y2="20.66"/><line x1="20.66" y1="7" x2="3.34" y2="17"/></svg></span>
+            <span class="ico dark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.5 9-8 10-4.5-1-8-5-8-10V6z"/><path d="M8 12l3 3 5-5"/></svg></span>
+          </div>
+        </div>
+        <div class="cv-right"><img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=700&h=700&auto=format&fit=crop&q=80" alt="" loading="lazy" /></div>
+      </div>
+      <div class="meta-row"><span class="badge insight">Insight</span><span>May 25, 2026</span><span class="dot"></span><span>12 min</span><span class="dot"></span><span>By <b>Mykyta Kuzmenko</b></span></div>
+      <h3>How Claude's Safety Approach Actually Works - And Why It Matters for Business</h3>
+      <p>Beneath the marketing: the actual safety layers that gate what your app can ask Claude to do.</p>
+    </a>
+
+    <!-- 5. Why Your Business Should Be Thinking About Claude MCP Apps Now -->
+    <a class="card" href="article.html">
+      <div class="cover insight">
+        <div class="cv-left">
+          <div class="icon-set">
+            <span class="label-chip">Business</span>
+            <span class="arrow">→</span>
+            <span class="ico brand-claude"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="2" y1="12" x2="22" y2="12"/><line x1="3.34" y1="7" x2="20.66" y2="17"/><line x1="7" y1="3.34" x2="17" y2="20.66"/><line x1="12" y1="2" x2="12" y2="22"/><line x1="17" y1="3.34" x2="7" y2="20.66"/><line x1="20.66" y1="7" x2="3.34" y2="17"/></svg></span>
+          </div>
+        </div>
+        <div class="cv-right"><img src="https://images.unsplash.com/photo-1497032205916-ac775f0649ae?w=700&h=700&auto=format&fit=crop&q=80" alt="" loading="lazy" /></div>
+      </div>
+      <div class="meta-row"><span class="badge insight">Insight</span><span>May 22, 2026</span><span class="dot"></span><span>9 min</span><span class="dot"></span><span>By <b>Mykyta Kuzmenko</b></span></div>
+      <h3>Why Your Business Should Be Thinking About Claude MCP Apps Now</h3>
+      <p>The window where being first matters — and the three categories that are still wide open.</p>
+    </a>
+
+    <!-- 6. How Does the Discovery System Work in the OpenAI App Store -->
+    <a class="card" href="article.html">
+      <div class="cover platform">
+        <div class="cv-left">
+          <div class="icon-set">
+            <span class="ico brand-openai"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M16.5 4.5a4.5 4.5 0 00-9 0v0a4.5 4.5 0 00-3.9 6.8v0a4.5 4.5 0 003.9 6.8v0a4.5 4.5 0 009 0v0a4.5 4.5 0 003.9-6.8v0a4.5 4.5 0 00-3.9-6.8z"/><path d="M8 9l8 4.5M16 9L8 13.5"/></svg></span>
+            <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/><path d="M14 8l-3 3"/></svg></span>
+          </div>
+        </div>
+        <div class="cv-right"><img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=700&h=700&auto=format&fit=crop&q=80" alt="" loading="lazy" /></div>
+      </div>
+      <div class="meta-row"><span class="badge platform">Platform</span><span>May 20, 2026</span><span class="dot"></span><span>11 min</span><span class="dot"></span><span>By <b>Mykyta Kuzmenko</b></span></div>
+      <h3>How Does the Discovery System Work in the OpenAI App Store</h3>
+      <p>Ranking signals, intent matching, and what we've learned from 30+ real submission outcomes.</p>
+    </a>
+
+    <!-- 7. ChatGPT Apps in 2025–2026: Trends and the Most Popular Use Cases -->
+    <a class="card" href="article.html">
+      <div class="cover insight">
+        <div class="cv-left">
+          <div class="icon-set">
+            <span class="label-chip">2025 – 2026</span>
+            <span class="ico brand-openai"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M16.5 4.5a4.5 4.5 0 00-9 0v0a4.5 4.5 0 00-3.9 6.8v0a4.5 4.5 0 003.9 6.8v0a4.5 4.5 0 009 0v0a4.5 4.5 0 003.9-6.8v0a4.5 4.5 0 00-3.9-6.8z"/><path d="M8 9l8 4.5M16 9L8 13.5"/></svg></span>
+            <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 7-7"/><path d="M14 8h6v6"/></svg></span>
+          </div>
+        </div>
+        <div class="cv-right"><img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=700&h=700&auto=format&fit=crop&q=80" alt="" loading="lazy" /></div>
+      </div>
+      <div class="meta-row"><span class="badge insight">Insight · Trends</span><span>May 18, 2026</span><span class="dot"></span><span>15 min</span><span class="dot"></span><span>By <b>Mykyta Kuzmenko</b></span></div>
+      <h3>ChatGPT Apps in 2025–2026: Trends and the Most Popular Use Cases</h3>
+      <p>What's actually shipping, what's being downloaded, and where the next 12 months of demand are forming up.</p>
+    </a>
+
+    <!-- 8. How ChatGPT Chooses Apps and Tools to Show -->
+    <a class="card" href="article.html">
+      <div class="cover platform">
+        <div class="cv-left">
+          <div class="icon-set">
+            <span class="ico brand-openai"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M16.5 4.5a4.5 4.5 0 00-9 0v0a4.5 4.5 0 00-3.9 6.8v0a4.5 4.5 0 003.9 6.8v0a4.5 4.5 0 009 0v0a4.5 4.5 0 003.9-6.8v0a4.5 4.5 0 00-3.9-6.8z"/><path d="M8 9l8 4.5M16 9L8 13.5"/></svg></span>
+            <span class="arrow">→</span>
+            <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M7 12h10M10 18h4"/></svg></span>
+          </div>
+        </div>
+        <div class="cv-right"><img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=700&h=700&auto=format&fit=crop&q=80" alt="" loading="lazy" /></div>
+      </div>
+      <div class="meta-row"><span class="badge platform">Platform</span><span>May 15, 2026</span><span class="dot"></span><span>7 min</span><span class="dot"></span><span>By <b>Mykyta Kuzmenko</b></span></div>
+      <h3>How ChatGPT Chooses Apps and Tools to Show</h3>
+      <p>A reverse-engineered look at the signals ChatGPT weighs when it picks which app to open.</p>
+    </a>
+
+    <!-- 9. How do ChatGPT apps get discovered? -->
+    <a class="card" href="article.html">
+      <div class="cover platform">
+        <div class="cv-left">
+          <div class="icon-set">
+            <span class="ico brand-openai"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M16.5 4.5a4.5 4.5 0 00-9 0v0a4.5 4.5 0 00-3.9 6.8v0a4.5 4.5 0 003.9 6.8v0a4.5 4.5 0 009 0v0a4.5 4.5 0 003.9-6.8v0a4.5 4.5 0 00-3.9-6.8z"/><path d="M8 9l8 4.5M16 9L8 13.5"/></svg></span>
+            <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="10" r="5"/><path d="M14 14l5 5"/><path d="M18 4l1 1M21 7l1 1M4 18l1 1"/></svg></span>
+          </div>
+        </div>
+        <div class="cv-right"><img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=700&h=700&auto=format&fit=crop&q=80" alt="" loading="lazy" /></div>
+      </div>
+      <div class="meta-row"><span class="badge platform">Platform</span><span>May 13, 2026</span><span class="dot"></span><span>9 min</span><span class="dot"></span><span>By <b>Mykyta Kuzmenko</b></span></div>
+      <h3>How do ChatGPT apps get discovered?</h3>
+      <p>The four discovery surfaces inside ChatGPT — and what determines which one shows your app first.</p>
+    </a>
+
+    <!-- 10. What Are Claude MCP Apps and How Do They Work -->
+    <a class="card" href="article.html">
+      <div class="cover platform">
+        <div class="cv-left">
+          <div class="icon-set">
+            <span class="ico brand-claude"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="2" y1="12" x2="22" y2="12"/><line x1="3.34" y1="7" x2="20.66" y2="17"/><line x1="7" y1="3.34" x2="17" y2="20.66"/><line x1="12" y1="2" x2="12" y2="22"/><line x1="17" y1="3.34" x2="7" y2="20.66"/><line x1="20.66" y1="7" x2="3.34" y2="17"/></svg></span>
+            <span class="ico brand-mcp"><img src="mcp-icon.png" alt="MCP" /></span>
+          </div>
+        </div>
+        <div class="cv-right"><img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=700&h=700&auto=format&fit=crop&q=80" alt="" loading="lazy" /></div>
+      </div>
+      <div class="meta-row"><span class="badge platform">Platform</span><span>May 12, 2026</span><span class="dot"></span><span>8 min</span><span class="dot"></span><span>By <b>Mykyta Kuzmenko</b></span></div>
+      <h3>What Are Claude MCP Apps and How Do They Work</h3>
+      <p>A plain-English breakdown of how Claude MCP Apps connect, authenticate, and run inside the chat surface.</p>
+    </a>
+
+  </div>
+</section>
+
+<!-- LEAD MAGNET -->
+<section class="lead-block">
+  <div class="lead-card">
+    <div>
+      <span class="eyebrow">✉  The MCP Brief · Weekly</span>
+      <h3>The signals shaping ChatGPT &amp; Claude app discovery — every Tuesday.</h3>
+      <p>Curated research, real submission data, ranking-signal changes, and the one playbook each week we'd actually use to ship faster. Free, no fluff, unsubscribe anytime.</p>
+      <div class="proof">
+        <div class="avatars">
+          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&h=80&auto=format&fit=crop&crop=faces&q=80" alt="" />
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&auto=format&fit=crop&crop=faces&q=80" alt="" />
+          <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&h=80&auto=format&fit=crop&crop=faces&q=80" alt="" />
+          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80&h=80&auto=format&fit=crop&crop=faces&q=80" alt="" />
+        </div>
+        <span><b style="color:#fff">2,400+</b> founders &amp; PMs subscribed</span>
+      </div>
+    </div>
+    <form onsubmit="event.preventDefault(); this.querySelector('button').textContent='✓  Check your inbox';">
+      <div class="input-row">
+        <input type="email" placeholder="you@company.com" required />
+        <button class="btn btn-red" type="submit">Get the brief</button>
+      </div>
+      <span class="terms">By subscribing, you agree to our <a href="#">Privacy Policy</a>. We never share emails.</span>
+    </form>
+  </div>
+</section>
+
+<!-- SOCIAL PROOF -->
+<section class="proof-bar">
+  <div class="inner">
+    <span class="label">Trusted by teams shipping on</span>
+    <div class="logos">
+      <img src="https://keenethics.com/wp-content/uploads/2026/01/Visa.svg" alt="Visa" style="height: 24px; filter: grayscale(1); opacity:.65;" />
+      <img src="https://keenethics.com/wp-content/uploads/2026/01/Nokia.svg" alt="Nokia" style="height: 24px; filter: grayscale(1); opacity:.65;" />
+      <img src="https://keenethics.com/wp-content/uploads/2026/01/Epson.svg" alt="Epson" style="height: 24px; filter: grayscale(1); opacity:.65;" />
+      <img src="https://keenethics.com/wp-content/uploads/2026/01/WorldLabs.svg" alt="WorldLabs" style="height: 24px; filter: grayscale(1); opacity:.65;" />
+      <img src="https://keenethics.com/wp-content/uploads/2026/01/Paystub.svg" alt="Paystub" style="height: 24px; filter: grayscale(1); opacity:.65;" />
+      <img src="https://keenethics.com/wp-content/uploads/2026/01/BankerAdvisor.svg" alt="BankerAdvisor" style="height: 24px; filter: grayscale(1); opacity:.65;" />
+      <img src="https://keenethics.com/wp-content/uploads/2026/01/Edstruments.svg" alt="Edstruments" style="height: 24px; filter: grayscale(1); opacity:.65;" />
+      <img src="https://keenethics.com/wp-content/uploads/2026/01/Brainable.svg" alt="Brainable" style="height: 24px; filter: grayscale(1); opacity:.65;" />
+      <img src="https://keenethics.com/wp-content/uploads/2026/01/StoryTerrace.svg" alt="StoryTerrace" style="height: 24px; filter: grayscale(1); opacity:.65;" />
+    </div>
+  </div>
+</section>
+
+<!-- GRID 2 -->
+<section class="grid-section">
+  <div class="head">
+    <div>
+      <h2>Strategy, growth &amp; comparison</h2>
+      <p>For when the app is live and you're chasing traction</p>
+    </div>
+  </div>
+  <div class="grid">
+
+    <!-- 11. How to Track ChatGPT Traffic and Conversions in GA -->
+    <a class="card" href="article.html">
+      <div class="cover howto">
+        <div class="cv-left">
+          <div class="icon-set">
+            <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 14l4-4 4 4 5-5"/></svg></span>
+            <span class="arrow">→</span>
+            <span class="ico brand-openai"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M16.5 4.5a4.5 4.5 0 00-9 0v0a4.5 4.5 0 00-3.9 6.8v0a4.5 4.5 0 003.9 6.8v0a4.5 4.5 0 009 0v0a4.5 4.5 0 003.9-6.8v0a4.5 4.5 0 00-3.9-6.8z"/><path d="M8 9l8 4.5M16 9L8 13.5"/></svg></span>
+          </div>
+        </div>
+        <div class="cv-right"><img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=700&h=700&auto=format&fit=crop&q=80" alt="" loading="lazy" /></div>
+      </div>
+      <div class="meta-row"><span class="badge howto">How-to</span><span>May 8, 2026</span><span class="dot"></span><span>9 min</span><span class="dot"></span><span>By <b>Mykyta Kuzmenko</b></span></div>
+      <h3>How to Track ChatGPT Traffic and Conversions in Google Analytics and Other Tools</h3>
+      <p>UTMs, referrer parsing, and the analytics setup that actually attributes revenue to the right surface.</p>
+    </a>
+
+    <!-- 12. ChatGPT Apps vs GPTs -->
+    <a class="card" href="article.html">
+      <div class="cover compare">
+        <div class="cv-left">
+          <div class="icon-set">
+            <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l9 5-9 5-9-5z"/><path d="M3 13l9 5 9-5"/></svg></span>
+            <span class="arrow vs">VS</span>
+            <span class="label-chip">GPTs</span>
+          </div>
+        </div>
+        <div class="cv-right"><img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=700&h=700&auto=format&fit=crop&q=80" alt="" loading="lazy" /></div>
+      </div>
+      <div class="meta-row"><span class="badge compare">Compare</span><span>May 12, 2026</span><span class="dot"></span><span>10 min</span><span class="dot"></span><span>By <b>Mykyta Kuzmenko</b></span></div>
+      <h3>ChatGPT Apps vs GPTs</h3>
+      <p>Capabilities, monetization, distribution — side by side. Plus a decision matrix to pick the right format.</p>
+    </a>
+
+    <!-- 13. ChatGPT Apps, Claude Apps, Cursor Apps comparison -->
+    <a class="card" href="article.html">
+      <div class="cover compare">
+        <div class="cv-left">
+          <div class="icon-set">
+            <span class="ico brand-openai"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M16.5 4.5a4.5 4.5 0 00-9 0v0a4.5 4.5 0 00-3.9 6.8v0a4.5 4.5 0 003.9 6.8v0a4.5 4.5 0 009 0v0a4.5 4.5 0 003.9-6.8v0a4.5 4.5 0 00-3.9-6.8z"/><path d="M8 9l8 4.5M16 9L8 13.5"/></svg></span>
+            <span class="ico brand-claude"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="2" y1="12" x2="22" y2="12"/><line x1="3.34" y1="7" x2="20.66" y2="17"/><line x1="7" y1="3.34" x2="17" y2="20.66"/><line x1="12" y1="2" x2="12" y2="22"/><line x1="17" y1="3.34" x2="7" y2="20.66"/><line x1="20.66" y1="7" x2="3.34" y2="17"/></svg></span>
+            <span class="ico brand-cursor"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M5 3l15 8-7 1.5L11 20z"/></svg></span>
+          </div>
+        </div>
+        <div class="cv-right"><img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=700&h=700&auto=format&fit=crop&q=80" alt="" loading="lazy" /></div>
+      </div>
+      <div class="meta-row"><span class="badge compare">Compare</span><span>May 10, 2026</span><span class="dot"></span><span>13 min</span><span class="dot"></span><span>By <b>Mykyta Kuzmenko</b></span></div>
+      <h3>ChatGPT Apps, Claude Apps, Cursor Apps comparison</h3>
+      <p>Capabilities, audience, monetization, and submission friction across all three — so you can pick the right venue first.</p>
+    </a>
+
+    <!-- 14. Publishing ChatGPT App -->
+    <a class="card" href="article.html">
+      <div class="cover howto">
+        <div class="cv-left">
+          <div class="icon-set">
+            <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 16V4M6 10l6-6 6 6"/><path d="M4 20h16"/></svg></span>
+            <span class="arrow">→</span>
+            <span class="ico brand-openai"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M16.5 4.5a4.5 4.5 0 00-9 0v0a4.5 4.5 0 00-3.9 6.8v0a4.5 4.5 0 003.9 6.8v0a4.5 4.5 0 009 0v0a4.5 4.5 0 003.9-6.8v0a4.5 4.5 0 00-3.9-6.8z"/><path d="M8 9l8 4.5M16 9L8 13.5"/></svg></span>
+          </div>
+        </div>
+        <div class="cv-right"><img src="https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?w=700&h=700&auto=format&fit=crop&q=80" alt="" loading="lazy" /></div>
+      </div>
+      <div class="meta-row"><span class="badge howto">How-to</span><span>May 6, 2026</span><span class="dot"></span><span>7 min</span><span class="dot"></span><span>By <b>Mykyta Kuzmenko</b></span></div>
+      <h3>Publishing ChatGPT App</h3>
+      <p>From local dev to live store listing — the abbreviated step-by-step.</p>
+    </a>
+
+    <!-- 15. Benefits of Integrating Your App Within ChatGPT -->
+    <a class="card" href="article.html">
+      <div class="cover insight">
+        <div class="cv-left">
+          <div class="icon-set">
+            <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 010 18M12 3a14 14 0 000 18"/></svg></span>
+            <span class="arrow">→</span>
+            <span class="ico brand-openai"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M16.5 4.5a4.5 4.5 0 00-9 0v0a4.5 4.5 0 00-3.9 6.8v0a4.5 4.5 0 003.9 6.8v0a4.5 4.5 0 009 0v0a4.5 4.5 0 003.9-6.8v0a4.5 4.5 0 00-3.9-6.8z"/><path d="M8 9l8 4.5M16 9L8 13.5"/></svg></span>
+          </div>
+        </div>
+        <div class="cv-right"><img src="https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?w=700&h=700&auto=format&fit=crop&q=80" alt="" loading="lazy" /></div>
+      </div>
+      <div class="meta-row"><span class="badge insight">Insight</span><span>May 4, 2026</span><span class="dot"></span><span>7 min</span><span class="dot"></span><span>By <b>Mykyta Kuzmenko</b></span></div>
+      <h3>Benefits of Integrating Your App Within ChatGPT</h3>
+      <p>Why building inside an AI surface beats yet another standalone SaaS launch — and the 4-question test to know if it applies to you.</p>
+    </a>
+
+    <!-- 16. How Can You Monetize ChatGPT Apps -->
+    <a class="card" href="article.html">
+      <div class="cover insight">
+        <div class="cv-left">
+          <div class="icon-set">
+            <span class="ico brand-openai"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M16.5 4.5a4.5 4.5 0 00-9 0v0a4.5 4.5 0 00-3.9 6.8v0a4.5 4.5 0 003.9 6.8v0a4.5 4.5 0 009 0v0a4.5 4.5 0 003.9-6.8v0a4.5 4.5 0 00-3.9-6.8z"/><path d="M8 9l8 4.5M16 9L8 13.5"/></svg></span>
+            <span class="arrow">→</span>
+            <span class="ico brand-red"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></span>
+          </div>
+        </div>
+        <div class="cv-right"><img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=700&h=700&auto=format&fit=crop&q=80" alt="" loading="lazy" /></div>
+      </div>
+      <div class="meta-row"><span class="badge insight">Insight</span><span>May 6, 2026</span><span class="dot"></span><span>11 min</span><span class="dot"></span><span>By <b>Mykyta Kuzmenko</b></span></div>
+      <h3>How Can You Monetize ChatGPT Apps</h3>
+      <p>Subscription, transaction, lead-gen, and licensing models — with real numbers from teams already cashing checks.</p>
+    </a>
+
+    <!-- 17. ChatGPT Apps Overview -->
+    <a class="card" href="article.html">
+      <div class="cover platform">
+        <div class="cv-left">
+          <div class="icon-set">
+            <span class="ico brand-openai"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M16.5 4.5a4.5 4.5 0 00-9 0v0a4.5 4.5 0 00-3.9 6.8v0a4.5 4.5 0 003.9 6.8v0a4.5 4.5 0 009 0v0a4.5 4.5 0 003.9-6.8v0a4.5 4.5 0 00-3.9-6.8z"/><path d="M8 9l8 4.5M16 9L8 13.5"/></svg></span>
+            <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg></span>
+          </div>
+        </div>
+        <div class="cv-right"><img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=700&h=700&auto=format&fit=crop&q=80" alt="" loading="lazy" /></div>
+      </div>
+      <div class="meta-row"><span class="badge platform">Platform</span><span>May 2, 2026</span><span class="dot"></span><span>6 min</span><span class="dot"></span><span>By <b>Mykyta Kuzmenko</b></span></div>
+      <h3>ChatGPT Apps Overview</h3>
+      <p>A bird's-eye view of the ChatGPT Apps ecosystem — what it is, who's shipping, and where the opportunity is.</p>
+    </a>
+
+  </div>
+</section>
+
+<!-- BIG BOTTOM CTA — personalized with Daria -->
+<section class="cta-section">
+  <div class="cta-block personal">
+    <div class="photo-wrap">
+      <img src="daria.webp" alt="Daria Hlavcheva — Head of Partner Engagement at KeenEthics" />
+      <span class="quote">Avg reply · a few hours</span>
+      <p class="person-sig">— <b>Daria Hlavcheva</b><br/>Head of Partner Engagement · KeenEthics</p>
+    </div>
+    <div>
+      <h2>Want an MCP app that <span class="accent">beats your competitors?</span><br/>Let's talk.</h2>
+      <p>I'm Daria, Head of Partner Engagement at KeenEthics. We've shipped 20+ Claude Connectors, ChatGPT Apps, and Cursor extensions. Send me a quick note about your project — I'll reply personally with how we can help.</p>
+      <div class="actions">
+        <a class="btn btn-red" href="#">Talk to Daria
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <a class="btn btn-ghost" href="#">See case studies</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="inner">
+    <div class="about">
+      <a class="brand" href="/">
+        <span class="name">MCP App Store</span>
+        <span class="lab">by <strong>KeenEthics</strong> Labs</span>
+      </a>
+      <p style="margin-top: 14px;">Directory-first research for teams evaluating ChatGPT and Claude connectors. A lab project from <a href="https://keenethics.com" style="color: var(--blue); text-decoration: underline;">KeenEthics</a>.</p>
+    </div>
+    <div>
+      <h6>Navigation</h6>
+      <ul>
+        <li><a href="#">Directory</a></li>
+        <li><a href="#">Tool Discovery</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Newsletter</a></li>
+      </ul>
+    </div>
+    <div>
+      <h6>Categories</h6>
+      <ul>
+        <li><a href="#">How-to</a></li>
+        <li><a href="#">Compare</a></li>
+        <li><a href="#">Insight</a></li>
+        <li><a href="#">Platform deep-dives</a></li>
+      </ul>
+    </div>
+    <div>
+      <h6>Build with us</h6>
+      <ul>
+        <li><a href="https://keenethics.com">KeenEthics.com</a></li>
+        <li><a href="#">Case studies</a></li>
+        <li><a href="#">Get a free audit</a></li>
+        <li><a href="#">Talk to our team</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="legal">
+    <span>© 2026 KeenEthics. All rights reserved.</span>
+    <span><a href="#">Privacy</a> · <a href="#">Terms</a></span>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('.pill').forEach(p => {
+    p.addEventListener('click', () => {
+      document.querySelectorAll('.pill').forEach(x => x.classList.remove('active'));
+      p.classList.add('active');
+    });
+  });
+</script>
+</body>
+</html>

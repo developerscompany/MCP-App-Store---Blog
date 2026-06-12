@@ -507,42 +507,52 @@ a { color: inherit; text-decoration: none; }
 .ke-modal-inner {
   background: #fff;
   border-radius: 16px;
-  padding: 28px 30px 24px;
+  padding: 0;
   position: relative;
-  max-height: 90vh; overflow-y: auto;
+  overflow: hidden;
   box-shadow: 0 40px 80px rgba(11,23,41,.30);
 }
 .ke-modal-close {
-  position: absolute; top: 14px; right: 14px;
-  width: 32px; height: 32px; border: 0; background: var(--tint);
+  position: absolute; top: 14px; right: 14px; z-index: 2;
+  width: 32px; height: 32px; border: 0;
+  background: rgba(255,255,255,.85); backdrop-filter: blur(8px);
   border-radius: 8px; cursor: pointer; color: var(--navy);
   display: grid; place-items: center; transition: background .15s;
+  box-shadow: 0 2px 6px rgba(11,23,41,.08);
 }
-.ke-modal-close:hover { background: var(--line); }
+.ke-modal-close:hover { background: #fff; }
 .ke-modal-close svg { width: 14px; height: 14px; }
 
-.ke-modal-person {
-  display: flex; align-items: center; gap: 12px;
-  padding-bottom: 18px; margin-bottom: 18px;
+/* Tinted header band */
+.ke-modal-header {
+  background: linear-gradient(135deg, var(--tint) 0%, #EAF2FF 100%);
   border-bottom: 1px solid var(--line);
+  padding: 26px 30px;
+}
+.ke-modal-person {
+  display: flex; align-items: center; gap: 14px;
 }
 .ke-modal-person img {
-  width: 48px; height: 48px; border-radius: 50%; object-fit: cover;
-  border: 2px solid #fff; box-shadow: 0 4px 10px rgba(18,35,61,.15);
+  width: 52px; height: 52px; border-radius: 50%; object-fit: cover;
+  border: 3px solid #fff; box-shadow: 0 6px 16px rgba(18,35,61,.18);
   flex: none;
 }
-.ke-modal-person b { display: block; font-size: 14px; color: var(--navy); }
+.ke-modal-person b { display: block; font-size: 15px; color: var(--navy); }
 .ke-modal-person > div > span { display: block; font-size: 12px; color: var(--muted); }
 .ke-modal-person .online {
   color: #1FAE45; font-weight: 700; font-size: 11px;
-  text-transform: uppercase; letter-spacing: .08em; margin-top: 2px;
+  text-transform: uppercase; letter-spacing: .08em; margin-top: 3px;
 }
 
-.ke-modal-inner h2 {
+/* White body section */
+.ke-modal-body {
+  padding: 26px 30px 24px;
+}
+.ke-modal-body h2 {
   margin: 0 0 8px; font-size: 22px; font-weight: 800; color: var(--navy);
   line-height: 1.25;
 }
-.ke-modal-inner > p {
+.ke-modal-body > p {
   margin: 0 0 22px; font-size: 14.5px; color: var(--muted);
   line-height: 1.55;
 }
@@ -571,9 +581,11 @@ a { color: inherit; text-decoration: none; }
 .ke-modal-form .btn { width: 100%; justify-content: center; margin-top: 8px; }
 
 .ke-modal-foot {
-  margin: 14px 0 0; font-size: 12px; color: var(--muted-2);
+  margin: 16px 0 0; font-size: 12px; color: var(--muted-2);
+  display: flex; align-items: center; justify-content: center; gap: 7px;
   text-align: center;
 }
+.ke-modal-foot svg { width: 13px; height: 13px; color: var(--blue); flex: none; }
 
 .ke-modal-success { text-align: center; padding: 24px 4px 8px; }
 .ke-modal-success-ico {
@@ -586,7 +598,9 @@ a { color: inherit; text-decoration: none; }
 .ke-modal-success p { margin: 0; color: var(--muted); font-size: 14.5px; }
 
 @media (max-width: 540px) {
-  .ke-modal-inner { padding: 22px 22px 20px; }
+  .ke-modal-header { padding: 22px 22px; }
+  .ke-modal-body { padding: 22px 22px 20px; }
+  .ke-modal-success { padding: 24px 22px 14px; }
 }
 
 /* ===================== Footer ===================== */

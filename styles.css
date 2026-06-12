@@ -191,14 +191,14 @@ a { color: inherit; text-decoration: none; }
   width: 100%; height: 100%; object-fit: cover;
   transition: transform .6s ease;
 }
-.cover .cv-right::after { /* category-colored fade — keeps icons legible */
+.cover .cv-right::after { /* darker category-tinted fade — keeps icons legible + stripe pops */
   content:""; position:absolute; inset:0;
-  background: linear-gradient(135deg, rgba(18,35,61,.65) 0%, rgba(18,35,61,.85) 100%);
+  background: linear-gradient(135deg, rgba(11,23,41,.82) 0%, rgba(11,23,41,.92) 100%);
 }
-.cover.howto    .cv-right::after { background: linear-gradient(135deg, rgba(41,105,204,.60) 0%, rgba(41,105,204,.85) 100%); }
-.cover.compare  .cv-right::after { background: linear-gradient(135deg, rgba(214,44,44,.60) 0%, rgba(214,44,44,.85) 100%); }
-.cover.insight  .cv-right::after { background: linear-gradient(135deg, rgba(18,35,61,.65) 0%, rgba(18,35,61,.88) 100%); }
-.cover.platform .cv-right::after { background: linear-gradient(135deg, rgba(31,84,168,.60) 0%, rgba(31,84,168,.85) 100%); }
+.cover.howto    .cv-right::after { background: linear-gradient(135deg, rgba(20,52,108,.88) 0%, rgba(13,33,72,.95) 100%); }
+.cover.compare  .cv-right::after { background: linear-gradient(135deg, rgba(112,24,24,.88) 0%, rgba(72,15,15,.95) 100%); }
+.cover.insight  .cv-right::after { background: linear-gradient(135deg, rgba(11,23,41,.90) 0%, rgba(8,17,32,.96) 100%); }
+.cover.platform .cv-right::after { background: linear-gradient(135deg, rgba(15,42,90,.88) 0%, rgba(10,28,60,.95) 100%); }
 .card:hover .cover .cv-right img,
 .featured-card:hover .cover .cv-right img { transform: scale(1.05); }
 

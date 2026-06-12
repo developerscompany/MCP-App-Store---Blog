@@ -658,7 +658,7 @@ a { color: inherit; text-decoration: none; }
   color: var(--muted); margin-right: 6px;
 }
 .share-btn {
-  width: 36px; height: 36px; border-radius: 4px;
+  width: 36px; height: 36px; border-radius: 50%;
   border: 1px solid var(--line); background: #fff; cursor: pointer; color: var(--navy);
   display:grid; place-items:center; transition: all .15s;
 }
